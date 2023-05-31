@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="source/assets/dest/css/animate.css">
     <link rel="stylesheet" title="style" href="source/assets/dest/css/huong-style.css">
 </head>
-
 <body>
-
     @include('header')
     <div class="rev-slider">
         @yield('content')
@@ -28,5 +26,4 @@
     {{-- include js files --}}
     @include('script')
 </body>
-
 </html>

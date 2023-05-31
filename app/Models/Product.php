@@ -13,7 +13,6 @@ class Product extends Model
     {
         return $this-> belongsTo('App\ProductType');
     }
-
     public function  comment()
     {
         return $this->hasMany(comment::class, 'id_product');
