@@ -9,12 +9,4 @@ class Product extends Model
 {
     use HasFactory;
     protected $table = "products";
-    public function product_type()
-    {
-        return $this-> belongsTo('App\ProductType');
-    }
-    public function  comment()
-    {
-        return $this->hasMany(comment::class, 'id_product');
-    }
 }

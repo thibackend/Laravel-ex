@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\BladeController ;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +16,10 @@ use App\Http\Controllers\BladeController ;
 
 
 Route::get('/',[PageController::class,'getIndex']);
-Route::get('/loai-san-pham',[PageController::class,'getLoaiSP']);
-Route::get('/chi-tiet-san-pham',[PageController::class,'getchitietSP']);
-Route::get('/lienhe',[PageController::class,'getLienHe']);
-Route::get('/about',[PageController::class,'getAbout']);
+Route::get('type/{id}',[PageController::class,'getLoaiSP']);
+Route::get('/detail/{id}',[PageController::class,'getDetail']);
+Route::get('lienhe',[PageController::class,'getLienHe']);
+Route::get('about',[PageController::class,'getAbout']);
 
 // Route::get('/',[PageController::class,'Index']);
 
