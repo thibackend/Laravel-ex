@@ -23,3 +23,9 @@ Route::get('about',[PageController::class,'getAbout']);
 
 // Route::get('/',[PageController::class,'Index']);
 
+Route::get('/admin', [App\Http\Controllers\PageController::class, 'getAdmin']);																					
+Route::get('/admin-add-form', [App\Http\Controllers\PageController::class, 'getAdminAdd'])->name('add-product');														
+Route::post('/admin-add-form', [App\Http\Controllers\PageController::class, 'postAdminAdd']);												
+Route::get('/admin-edit-form/{id}', [App\Http\Controllers\PageController::class, 'getAdminEdit']);
+Route::post('/admin-edit', [App\Http\Controllers\PageController::class, 'postAdminEdit']);
+
