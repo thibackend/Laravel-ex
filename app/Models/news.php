@@ -8,8 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class news extends Model
 {
     use HasFactory;
-    public function news()
-    {
-        
-    }
+    protected $news ="news";
 }
